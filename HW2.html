@@ -1,0 +1,197 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <titel></titel>
+        <style type="text/css">
+        .bird {
+	        width: 3%;
+	        height: 70px;
+	        position: absolute;
+	        left: 0;
+	        top: 0;
+	        animation-duration: 3s;
+	        animation-iteration-count: 1;
+	        animation-fill-mode: forwards;
+	    }
+	    .pig {
+	        width: 3%;
+	        height: 80px;
+	        position: absolute;
+	        right: 0;
+	        bottom: 5px;
+	        animation-duration: 3s;
+	        animation-iteration-count: 1;
+	        animation-fill-mode: forwards;
+	    }
+	    .egg {
+        	background-image: url("egg.png");
+        	background-size: contain;
+        	
+   		}
+   		.rog{
+   			background-image: url("rog.png");
+        	background-size: contain;	
+
+   		}
+	    .field {
+	        position: relative;
+	        background: aqua;
+	        height: 400px;
+    	}
+    	.field table {
+	        width: 100%;
+	        height: 100%;
+   		}
+    	.field:hover .bird {
+        	animation-name: cartoon_bird;
+    	}
+    	.field:hover .pig {
+        	animation-name: cartoon_pig;
+    	}
+		@keyframes cartoon_bird {
+	        10% {
+	            left: 10%;
+	            top: 0px;
+	        }
+	        20% {
+	            left: 10%;
+	            top: 150px;
+	        }
+	        30% {
+	            left: 20%;
+	            top: 150px;
+	        }
+	        40% {
+	            left: 20%;
+	            top: 200px;
+	        }
+	        50%{
+	        	left: 30%;
+	            top: 200px;	
+	        }
+	        60% {
+	            left: 30%;
+	            top:250px;
+	        }
+	        70% {
+	            left: 40%;
+	            top: 250px;
+	        }
+	        80% {
+	            left: 40%;
+	            top: 200px;
+	        }
+	        90% {
+	            left: 50%;
+	            top: 200px;
+	        }
+	        100%{
+	        	left: 50%;
+	            top: 150px;	
+	        }
+    	}
+    	@keyframes cartoon_pig {
+	        10% {
+	            right: 10%;
+	            bottom: 0;
+	        }
+	        20% {
+	            right: 10%;
+	            bottom: 100px;
+	        }
+	        30% {
+	            right: 20%;
+	            bottom: 100px;
+	        }
+	        40% {
+	            right: 20%;
+	            bottom: 150px;
+	        }
+	        50% {
+	            right: 30%;
+	            bottom: 150;
+	        }
+	        60% {
+	            right: 30%;
+	            bottom: 200px;
+	        }
+	        70% {
+	            right: 30%;
+	            bottom: 300px;
+	        }
+	        80% {
+	            right: 40%;
+	            bottom: 300px;
+	        }
+	        90% {
+	            right: 40%;
+	            bottom: 300px;
+	        }
+	        100% {
+	            right: 0%;
+	            bottom: 0;
+	        }
+    	}
+	    @keyframes cartoon_field {
+	    }
+        </style>
+    </head>
+    <body>
+      <div class="field">
+     	<div><img class="bird" src="Red.png"></div>
+      	<div><img class="pig" src="Pig.png"></div>
+      	<table border="1">
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td class="rog"></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td class="egg"></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	      <tr>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      	<td></td>
+	      </tr>
+	    </table>
+      </div>  
+    </body>
+</html>
